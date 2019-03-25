@@ -9,6 +9,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "NeonShooter.Shared", "NeonS
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		NeonShooter.Shared\NeonShooter.Shared.projitems*{29e701fd-b48b-40fa-a4f0-0699387d7699}*SharedItemsImports = 4
 		NeonShooter.Shared\NeonShooter.Shared.projitems*{a0cdbd0e-3a41-42b7-9425-a838bc2c7383}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

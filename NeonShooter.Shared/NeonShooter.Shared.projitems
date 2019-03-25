@@ -9,7 +9,15 @@
     <Import_RootNamespace>NeonShooter.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Game1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameRoot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Art.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Bullet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Entity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\EntityManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Extensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Input.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\MathUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\PlayerShip.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Content\" />
@@ -17,4 +25,4 @@
   <ItemGroup>
     <MonoGameContentReference Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
   </ItemGroup>
- </Project>
+</Project>
