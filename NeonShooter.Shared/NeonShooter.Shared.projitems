@@ -12,12 +12,16 @@
     <Compile Include="$(MSBuildThisFileDirectory)GameRoot.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Art.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Bullet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Enemy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\EnemySpawner.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Entity.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\EntityManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Extensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Input.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\MathUtil.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\PlayerShip.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\PlayerStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Sound.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Content\" />

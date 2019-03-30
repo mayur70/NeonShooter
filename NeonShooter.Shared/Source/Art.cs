@@ -10,6 +10,7 @@ namespace NeonShooter.Shared.Source
         public static Texture2D Wanderer { get; private set; }
         public static Texture2D Bullet { get; private set; }
         public static Texture2D Pointer { get; private set; }
+        public static SpriteFont Font { get; private set; }
 
         public static void LoadContent(ContentManager content)
         {
@@ -18,6 +19,7 @@ namespace NeonShooter.Shared.Source
             Wanderer = content.Load<Texture2D>("Wanderer");
             Bullet = content.Load<Texture2D>("Bullet");
             Pointer = content.Load<Texture2D>("Pointer");
+            Font = content.Load<SpriteFont>("Font");
         }
     }
 }
