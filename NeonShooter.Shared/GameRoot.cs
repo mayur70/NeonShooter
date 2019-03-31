@@ -1,5 +1,6 @@
 ﻿#region Using Statements
 
+using BloomPostprocess;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -24,6 +25,7 @@ namespace NeonShooter.Shared
 
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        //BloomComponent bloom;
 
         public GameRoot()
         {
@@ -33,6 +35,10 @@ namespace NeonShooter.Shared
 
             Instance = this;
             MuteSounds = false;
+
+            //bloom = new BloomComponent(this);
+            //Components.Add(bloom);
+            //bloom.Settings = new BloomSettings(null, 0.25f, 4, 2, 1, 1.5f, 1);
         }
 
         /// <summary>
@@ -98,11 +104,16 @@ namespace NeonShooter.Shared
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
+            //bloom.BeginDraw();
             GraphicsDevice.Clear(Color.Black);
 
             //TODO: Add your drawing code here
             spriteBatch.Begin(SpriteSortMode.Texture, BlendState.Additive);
             EntityManager.Draw(spriteBatch);
+            spriteBatch.End();
+            base.Draw(gameTime);
+
+            spriteBatch.Begin();
 
             spriteBatch.DrawString(Art.Font, "Lives: " + PlayerStatus.Lives, new Vector2(5), Color.White);
             DrawRightAlignedString("Score: " + PlayerStatus.Score, 5);
@@ -121,7 +132,6 @@ namespace NeonShooter.Shared
 
             spriteBatch.Draw(Art.Pointer, Input.MousePosition, Color.White);
             spriteBatch.End();
-            base.Draw(gameTime);
         }
 
         private void DrawRightAlignedString(string text, float y)

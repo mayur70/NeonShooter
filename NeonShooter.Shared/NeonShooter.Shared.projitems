@@ -11,6 +11,8 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)GameRoot.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Art.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\BloomComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\BloomSettings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Bullet.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\Enemy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source\EnemySpawner.cs" />
